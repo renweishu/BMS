@@ -1,0 +1,160 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 主页面start -->
+    <!-- ListView每一行的整体样式 -->
+    <style name="ListItem">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/listItemHeight</item>
+        <item name="android:layout_weight">@string/listItemWeight</item>
+        <item name="android:background">@drawable/list_item_background</item>
+        <item name="android:baselineAligned">false</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">@dimen/listItemPaddingBottom</item>
+        <item name="android:paddingLeft">@dimen/listItemPaddingLeft</item>
+        <item name="android:paddingRight">@dimen/listItemPaddingRight</item>
+        <item name="android:paddingTop">@dimen/listItemPaddingTop</item>
+        <item name="android:scrollingCache">false</item>
+    </style>
+
+    <!-- ListView每一行中每一个格子的整体样式 -->
+    <style name="ListGrid">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">@string/listGridWeight</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/listGridPadding</item>
+    </style>
+
+    <!-- ListView每一行中每一个格子的控件叠加布局的样式(用于实现底层是图片，上层是menu) -->
+    <style name="ListGridFrameLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <!-- ListView每一行中每一个格子的图片样式 -->
+    <style name="ListGridImageView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/listItemHeight</item>
+        <item name="android:contentDescription">@string/bookImage</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- ListView每一行中每一个格子的菜单整体布局样式 -->
+    <style name="ListGridMenuLinearLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/listItemHeight</item>
+        <item name="android:background">@color/transparent_gray</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- ListView每一行中每一个格子的底部菜单上方空白布局样式 -->
+    <style name="ListGridMenuBlank">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/listGridBlankMenuHeight</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <!-- ListView每一行中每一个格子的底部菜单样式 -->
+    <style name="ListGridMenu">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/listGridMenuHeight</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- ListView每一行中每一个格子的底部菜单中左侧文字的样式 -->
+    <style name="ListGridMenuText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">@string/listGridTextWeight</item>
+        <item name="android:background">@color/transparent_gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/listGridTextFountSize</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- ListView每一行中每一个格子的底部菜单中右侧按钮的样式 -->
+    <style name="ListGridMenuButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">@string/listGridMenuButtonWeight</item>
+        <item name="android:background">@color/transparent_gray</item>
+        <item name="android:contentDescription">@string/bookButtonImage</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/list_item_button</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- 每一个格子底部按钮弹出菜单的总Layout -->
+    <style name="ListGridPopupMenuLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 每一个格子底部按钮弹出菜单的每一个竖排按钮与文字的Layout -->
+    <style name="ListGridPopupMenuVerticalLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- 每一个格子底部按钮弹出菜单的按钮 -->
+    <style name="ListGridPopupMenuButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <!-- 每一个格子底部按钮弹出菜单的文字 -->
+    <style name="ListGridPopupMenuText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/transparent_gray</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+
+    <!-- 每一个格子顶部下载进度条下方说明文字 -->
+    <style name="ListGridDownloadProcessbarText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/listGridProcessbarTextHeight</item>
+        <item name="android:layout_marginTop">1dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/download</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:textSize">@dimen/listGridProcessbarTextSize</item>
+    </style>
+    <!-- 主页面end -->
+
+</resources>

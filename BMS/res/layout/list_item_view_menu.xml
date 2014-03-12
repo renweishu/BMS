@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListGridPopupMenuLayout" >
+
+    <LinearLayout style="@style/ListGridPopupMenuVerticalLayout" >
+
+        <ImageButton
+            android:id="@id/gridMenuButton1"
+            style="@style/ListGridPopupMenuButton"
+            android:src="@drawable/menu_read" />
+
+        <TextView
+            style="@style/ListGridPopupMenuText"
+            android:text="@string/listGridMenuButtonRead" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/ListGridPopupMenuVerticalLayout" >
+
+        <ImageButton
+            android:id="@id/gridMenuButton2"
+            style="@style/ListGridPopupMenuButton"
+            android:src="@drawable/menu_delete" />
+
+        <TextView
+            style="@style/ListGridPopupMenuText"
+            android:text="@string/listGridMenuButtonDelete" />
+    </LinearLayout>
+    <LinearLayout style="@style/ListGridPopupMenuVerticalLayout" >
+
+        <ImageButton
+            android:id="@id/gridMenuButton3"
+            style="@style/ListGridPopupMenuButton"
+            android:src="@drawable/menu_return" />
+
+        <TextView
+            style="@style/ListGridPopupMenuText"
+            android:text="@string/listGridMenuButtonReturn" />
+    </LinearLayout>
+
+</LinearLayout>

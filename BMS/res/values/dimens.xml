@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 主页面start -->
+    <!-- ListView整行的顶边距 -->
+    <dimen name="listItemPaddingTop">10dp</dimen>
+    <!-- ListView整行的底边距 -->
+    <dimen name="listItemPaddingBottom">10dp</dimen>
+    <!-- ListView整行的左边距 -->
+    <dimen name="listItemPaddingLeft">9dp</dimen>
+    <!-- ListView整行的右边距 -->
+    <dimen name="listItemPaddingRight">9dp</dimen>
+    <!-- ListView每一个格子的四边距 -->
+    <dimen name="listGridPadding">10dp</dimen>
+
+    <!-- ListView整行的高度 -->
+    <dimen name="listItemHeight">290dp</dimen>
+    <!-- ListView每一个格子的上方下载进度条的高度 -->
+    <dimen name="listGridProcessbarHeight">25dp</dimen>
+    <!-- ListView每一个格子的上方下载进度条下面说明文字的高度 -->
+    <dimen name="listGridProcessbarTextHeight">25dp</dimen>
+    <!-- ListView每一个格子的上方下载进度条下面说明文字的字体大小 -->
+    <dimen name="listGridProcessbarTextSize">18sp</dimen>
+    <!-- ListView每一个格子的菜单上面空白的部分高度(=整行的高度-菜单高度) -->
+    <dimen name="listGridBlankMenuHeight">190dp</dimen>
+    <!-- ListView每一个格子的菜单高度 -->
+    <dimen name="listGridMenuHeight">50dp</dimen>
+
+    <!-- 菜单栏字体大小 -->
+    <dimen name="listGridTextFountSize">18sp</dimen>
+    <!-- 主页面end -->
+
+</resources>

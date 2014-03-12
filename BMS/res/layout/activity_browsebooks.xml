@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<AdapterViewFlipper
+		android:id="@+id/flipper"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:flipInterval="5000"
+		android:layout_alignParentTop="true"/>
+
+	<TextView
+	    android:id="@+id/Txt_lbl"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/Txt_NowPage"
+	    android:layout_alignBottom="@+id/Txt_NowPage"
+	    android:layout_toRightOf="@+id/Txt_NowPage"
+	    android:text="@string/stringSprit" />
+
+	<TextView
+	    android:id="@+id/Txt_TotailPage"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/Txt_lbl"
+	    android:layout_alignBottom="@+id/Txt_lbl"
+	    android:layout_toRightOf="@+id/Txt_lbl"
+	    android:text="" />
+
+	<TextView
+	    android:id="@+id/Txt_NowPage"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/Txt_playStyle2"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginTop="58dp"
+	    />
+
+	<TextView
+	    android:id="@+id/back"
+	    android:layout_width="wrap_content"
+	    android:layout_height="30dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/back"
+	    android:text="" />
+
+	<TextView
+	    android:id="@+id/Txt_backGround"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/Play"
+	    android:background="#696969"
+	    android:text="" />
+
+	<TextView
+	    android:id="@+id/Txt_playStyle1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:text="@string/playStyle_Random" />
+
+	<TextView
+	    android:id="@+id/Play"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:background="@drawable/play"
+	    android:onClick="auto" />
+
+	<TextView
+	    android:id="@+id/Txt_playStyle2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:text="@string/playStyle_Sequence" />
+	
+</RelativeLayout>

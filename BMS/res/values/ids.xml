@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主界面start -->
+    <!-- ListView每一行第1个格子 -->
+    <item name="listGridImageView1" type="id">false</item>
+    <item name="listGridTextView1" type="id">false</item>
+    <item name="listGridImageButton1" type="id">false</item>
+    
+    <!-- ListView每一行第2个格子 -->
+    <item name="listGridImageView2" type="id">false</item>
+    <item name="listGridTextView2" type="id">false</item>
+    <item name="listGridImageButton2" type="id">false</item>
+    
+    <!-- ListView每一行第3个格子 -->
+    <item name="listGridImageView3" type="id">false</item>
+    <item name="listGridTextView3" type="id">false</item>
+    <item name="listGridImageButton3" type="id">false</item>
+    <item name="listGridDownloadStatus1" type="id">false</item>
+    <item name="listGridDownloadStatus2" type="id">false</item>
+    <item name="listGridDownloadStatus3" type="id">false</item>
+    
+    <!-- ListView中每个格子的菜单按钮 -->
+    <item name="gridMenuButton1" type="id">false</item>
+    <item name="gridMenuButton2" type="id">false</item>
+    <item name="gridMenuButton3" type="id">false</item>
+    
+    <!-- ListView中每个格子的下载进度条 -->
+    <item name="download_prssbar1" type="id">false</item>
+    <item name="download_prssbar2" type="id">false</item>
+    <item name="download_prssbar3" type="id">false</item>
+    
+    <!-- ListView中每个格子的下载进度说明文字 -->
+    <item name="download_result1" type="id">false</item>
+    <item name="download_result2" type="id">false</item>
+    <item name="download_result3" type="id">false</item>
+    <!-- 主页面end -->
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#7EC0EE</color>
+    <color name="green">#7CCD7C</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <!-- 透明度80%的灰色 -->
+    <color name="transparent_gray">#CC444341</color>
+</resources>

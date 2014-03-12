@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/customviewlayTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A94F9" >
+
+        <ImageButton
+            android:id="@+id/downloadBackHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/canceltor" />
+
+        <TextView
+            android:id="@+id/download_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="期刊：三月 粉红色的桃花"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/customviewlayMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customviewlayTitle"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <!-- 这儿实现的图文混排 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/download_book"
+                android:layout_width="140dip"
+                android:layout_height="200dip"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/info_tv_right"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/download_book"
+                android:gravity="fill_horizontal"
+                android:paddingLeft="7dp"
+                android:text="简介:《留德十年》记述了季羡林1935至1945年抛家傍路赴德求学的经过傍路赴德求学的经过傍路赴德求学的经过傍路赴德求学的经过傍路赴德求学的经经过傍路赴德求学的经过傍路赴德求学的经经过傍路赴德求学的"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/info_tv_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/download_book"
+                android:gravity="fill_horizontal"
+                android:text="学的经过傍路赴德求学的经过傍路赴德求学的经过傍路赴德求学的经过傍路赴德求学的经过傍路赴德求学的经过"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/customviewlayLink"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customviewlayMessage"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <!-- 下载图书的按钮与进度条 -->
+
+        <Button
+            android:id="@+id/download_button"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/linkbtnbged"
+            android:text="去下载" />
+        <!-- progressBarStyleHorizontal popupWindowStyle -->
+
+        <ProgressBar
+            android:id="@+id/download_prssbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/download_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:visibility="gone" />
+        <!-- 下载图书的按钮与进度条 -->
+
+    </LinearLayout>
+
+</RelativeLayout>
