@@ -172,7 +172,7 @@ public class NewBookOnlineActivity extends Activity {
 				}
 				break;
 			case -1:
-				Toast.makeText(NewBookOnlineActivity.this, R.string.error, 1).show();
+				Toast.makeText(NewBookOnlineActivity.this, R.string.error, Toast.LENGTH_SHORT).show();
 				break;
 			}
 		}    	
@@ -332,11 +332,11 @@ public class NewBookOnlineActivity extends Activity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				// invisible：不显示，但空出格子
-				invisible =view.INVISIBLE;
+				invisible =View.INVISIBLE;
 				// visible：正常显示
-				visible=view.VISIBLE;
+				visible=View.VISIBLE;
 				// gone：不显示，且不空出格子
-				gone=view.GONE;
+				gone=View.GONE;
 				// 获取点击的书本信息
 				Book bookdowmload_item = bookList.get(position-1);
 				// 取每一本书的ID 作为当前下载任务的线程ID
