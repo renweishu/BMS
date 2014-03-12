@@ -19,7 +19,7 @@
         <ImageView
             android:id="@+id/list_image"
             android:layout_width="96dip"
-            android:layout_height="96dip"
+            android:layout_height="120dip"
             android:src="@drawable/rihanna" />
     </LinearLayout>
 
